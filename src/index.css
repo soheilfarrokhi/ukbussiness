@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --menu-color: #dad8d8;
+  --menu-color-black: #000;
+  --primary-btn-color: #ff7f11;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--main-font);
+  background-color: #000;
+}
+
+select {
+  background-color: transparent;
+}
+select option {
+  background-color: transparent;
+}
+
+button {
+  outline: none;
+}
+
+input,
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+/* my customs  */
+.main-nav {
+  background-color: var(--menu-color-black);
+  transition: 0.4s ease;
+}
+
+.mobile-nav {
+  transition: 0.5s ease;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.mobile-nav-show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.main-nav nav a {
+  transition: 0.3s ease;
+}
+.main-nav nav a:hover {
+  color: var(--primary-btn-color);
+}
+.main-nav nav .active {
+  color: var(--primary-btn-color);
+}
+/* my customs end */

@@ -1,0 +1,31 @@
+/* FullWidthVideo.css */
+.full-width-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio for responsive video */
+  overflow: hidden;
+  height: 100%;
+}
+
+.full-width-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width to cover the full screen width */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity as needed */
+}
