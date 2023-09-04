@@ -8,6 +8,8 @@ import { ContactUs } from "../components/home/ContactUs";
 import { FixedBg } from "../components/home/FixedBg";
 import { Transitions } from "../components/global/Transitions";
 import { LegalServices } from "../components/home/LegalServices";
+import { OurPartners } from "../components/home/OurPartners";
+import { MarketingServices } from "../components/home/MarketingServices";
 
 export const HomePage = () => {
   return (
@@ -17,6 +19,8 @@ export const HomePage = () => {
       <HowItWorks />
       <WhyChooseUs />
       <LegalServices />
+      <OurPartners />
+      <MarketingServices />
       <FixedBg />
       <ContactUs />
     </Transitions>

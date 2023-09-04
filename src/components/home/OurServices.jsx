@@ -6,21 +6,37 @@ import Img2 from "../../assets/images/home/2.jpg";
 import Img3 from "../../assets/images/home/3.jpg";
 import Img4 from "../../assets/images/home/4.jpg";
 import Img5 from "../../assets/images/home/5.jpg";
+import { useHomeContext } from "../../context/HomeContext";
 
 export const OurServices = () => {
+  const { isDarkMode } = useHomeContext();
   return (
     <>
       <div
-        className={`w-full min-h-[300px] flex-col text-center justify-center gap-8 bg-white ${styles.padding} overflow-hidden`}
+        className={`w-full min-h-[300px] flex-col text-center justify-center gap-8 ${
+          isDarkMode ? "bg-blackColor" : "bg-whiteColor"
+        } ${styles.padding} overflow-hidden`}
       >
-        <h2 className={`${styles.sectionHeadText} text-center mb-2`}>
+        <h2
+          className={`${styles.sectionHeadText} ${
+            isDarkMode ? "text-whiteColor" : "text-blackColor"
+          } text-center mb-2`}
+        >
           Our Services
         </h2>
-        <h4 className={`${styles.h4Text} text-center mb-8`}>
+        <h4
+          className={`${styles.h4Text}  ${
+            isDarkMode ? "text-whiteColor" : "text-blackColor"
+          } text-center mb-8`}
+        >
           Our approach to our services is personal, bespoke and flexible
         </h4>
         <div className="w-full max-w-[500px] mx-auto">
-          <p className={`${styles.pText} text-center`}>
+          <p
+            className={`${styles.pText} text-center  ${
+              isDarkMode ? "text-whiteColor" : "text-blackColor"
+            }`}
+          >
             U K A is a collective of the youngest and most innovative minds in
             the UAE and the UK. Our Company takes pride for the fact that it
             provides all the information and intelligence that one may need
@@ -71,7 +87,11 @@ export const OurServices = () => {
         </div>
       </div>
       <div
-        className={`w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center bg-whiteColor text-black min-h-[300px] gap-0 overflow-hidden ${styles.padding}`}
+        className={`w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center  ${
+          isDarkMode ? "bg-blackColor" : "bg-whiteColor"
+        }  ${
+          isDarkMode ? "text-whiteColor" : "text-blackColor"
+        } min-h-[300px] gap-0 overflow-hidden ${styles.padding}`}
       >
         <h4
           className={`${styles.hText} col-span-1 md:col-span-3 lg:col-span-5 text-end mb-8`}
@@ -79,23 +99,43 @@ export const OurServices = () => {
           Marketing
         </h4>
         <div className="flex flex-col gap-4 p-4 cursor-pointer transition hover:text-greyColor">
-          <div className="h-[1px] bg-black w-full md:w-[200px]"></div>
+          <div
+            className={`h-[1px]  ${
+              isDarkMode ? "bg-whiteColor" : "bg-blackColor"
+            }  w-full md:w-[200px]`}
+          ></div>
           <p>Digital marketing & Social media management</p>
         </div>
         <div className="flex flex-col gap-4 p-4 cursor-pointer transition hover:text-greyColor">
-          <div className="h-[1px] bg-black w-full md:w-[200px]"></div>
+          <div
+            className={`h-[1px]  ${
+              isDarkMode ? "bg-whiteColor" : "bg-blackColor"
+            }  w-full md:w-[200px]`}
+          ></div>
           <p>Graphic design</p>
         </div>
         <div className="flex flex-col gap-4 p-4 cursor-pointer transition hover:text-greyColor">
-          <div className="h-[1px] bg-black w-full md:w-[200px]"></div>
+          <div
+            className={`h-[1px]  ${
+              isDarkMode ? "bg-whiteColor" : "bg-blackColor"
+            }  w-full md:w-[200px]`}
+          ></div>
           <p>Branding</p>
         </div>
         <div className="flex flex-col gap-4 p-4 cursor-pointer transition hover:text-greyColor">
-          <div className="h-[1px] bg-black w-full md:w-[200px]"></div>
+          <div
+            className={`h-[1px]  ${
+              isDarkMode ? "bg-whiteColor" : "bg-blackColor"
+            }  w-full md:w-[200px]`}
+          ></div>
           <p>Trailer and commercial videos</p>
         </div>
         <div className="flex flex-col gap-4 p-4 cursor-pointer transition hover:text-greyColor">
-          <div className="h-[1px] bg-black w-full md:w-[200px]"></div>
+          <div
+            className={`h-[1px]  ${
+              isDarkMode ? "bg-whiteColor" : "bg-blackColor"
+            }  w-full md:w-[200px]`}
+          ></div>
           <p>Photography and videography</p>
         </div>
       </div>

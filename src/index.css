@@ -65,3 +65,14 @@ input:focus {
   color: var(--primary-btn-color);
 }
 /* my customs end */
+
+.brand-box {
+  width: 200px;
+  height: 200px;
+  box-shadow: 8px 12px 32px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
