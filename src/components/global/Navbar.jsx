@@ -99,7 +99,7 @@ export const Navbar = () => {
           <NavLink to="/marketing" activeClassName="active-link">
             Marketing
           </NavLink>
-          <NavLink to="/packages" activeClassName="active-link">
+          <NavLink to="/plans&pricing" activeClassName="active-link">
             Packages
           </NavLink>
           <NavLink to="/terms&Conditions" activeClassName="active-link">

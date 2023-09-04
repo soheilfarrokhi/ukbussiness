@@ -4,15 +4,22 @@ import Img from "../../assets/images/home/how-it-works.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../global/Button";
 import { Link } from "react-router-dom";
+import { useHomeContext } from "../../context/HomeContext";
 
 export const ContactUs = () => {
+  const { isDarkMode } = useHomeContext();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <div
       id={"contactUs"}
-      className={`w-full grid grid-cols-1 lg:grid-cols-3 gap-4 bg-black min-h-[500px]  overflow-hidden text-white ${styles.padding}`}
+      className={`w-full grid grid-cols-1 lg:grid-cols-3 gap-4 ${
+        isDarkMode ? "bg-blackColor" : "bg-whiteColor"
+      } min-h-[500px]  overflow-hidden ${
+        isDarkMode ? "text-whiteColor" : "text-blackColor"
+      } ${styles.padding}`}
     >
       <div className="flex flex-col items-start justify-between mb-8 lg:mb-0">
         <div className="flex flex-col gap-2">
@@ -83,7 +90,9 @@ export const ContactUs = () => {
                 First Name
               </label>
               <input
-                className=" px-2 py-1 bg-transparent border-bottom hover:border-primary"
+                className={`px-2 py-1 bg-transparent ${
+                  isDarkMode ? "border-whiteColor" : "border-blackColor"
+                } border-bottom  hover:border-primary`}
                 type="text"
               />
             </div>
@@ -92,7 +101,9 @@ export const ContactUs = () => {
                 Last Name
               </label>
               <input
-                className=" px-2 py-1 bg-transparent border-bottom hover:border-primary"
+                className={`px-2 py-1 bg-transparent ${
+                  isDarkMode ? "border-whiteColor" : "border-blackColor"
+                } border-bottom  hover:border-primary`}
                 type="text"
               />
             </div>
@@ -103,7 +114,9 @@ export const ContactUs = () => {
               Email
             </label>
             <input
-              className=" px-2 py-1 bg-transparent border-bottom hover:border-primary"
+              className={`px-2 py-1 bg-transparent ${
+                isDarkMode ? "border-whiteColor" : "border-blackColor"
+              } border-bottom  hover:border-primary`}
               type="email"
             />
           </div>
@@ -112,7 +125,9 @@ export const ContactUs = () => {
               Message
             </label>
             <input
-              className=" px-2 py-1 bg-transparent border-bottom hover:border-primary"
+              className={`px-2 py-1 bg-transparent ${
+                isDarkMode ? "border-whiteColor" : "border-blackColor"
+              } border-bottom  hover:border-primary`}
               type="text"
             />
           </div>

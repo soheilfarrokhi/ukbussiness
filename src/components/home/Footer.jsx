@@ -13,7 +13,7 @@ export const Footer = () => {
       <div
         className={`${styles.padding} bg-primary flex items-center justify-center ${styles.pText} text-white`}
       >
-        <p>© 2035 by Lynch & Powell. Powered and secured by Wix</p>
+        <p>© copywrite by uk bussiness.</p>
       </div>
     </>
   );

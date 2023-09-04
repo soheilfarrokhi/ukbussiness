@@ -3,7 +3,10 @@ import { FaGripLines } from "react-icons/fa";
 import { styles } from "../../styles";
 import { Link, NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
+import { useHomeContext } from "../../context/HomeContext";
+import { CiDark } from "react-icons/ci";
 export const MobileNavbar = () => {
+  const { isDarkMode } = useHomeContext();
   const [showSide, setShowSide] = useState(false);
 
   const showSidebar = () => {
@@ -12,7 +15,9 @@ export const MobileNavbar = () => {
   return (
     <div className="flex flex-col gap-8">
       <div
-        className="flex lg:hidden text-white cursor-pointer"
+        className={`flex lg:hidden cursor-pointer ${
+          isDarkMode ? "text-whiteColor" : "text-blackColor"
+        }`}
         onClick={showSidebar}
       >
         <FaGripLines />
@@ -29,24 +34,33 @@ export const MobileNavbar = () => {
           <FaTimes />
         </div>
         <nav className="w-full h-full flex flex-col gap-4 text-end gap-4 text-black">
+          {/*darkmode theme  */}
+
+          {/*darkmode theme end */}
           <NavLink to="/" activeClassName="active-link" exact>
             Home
           </NavLink>
           <NavLink to="/about" activeClassName="active-link">
             About
           </NavLink>
-          <NavLink to="/services" activeClassName="active-link">
-            Services
+          <NavLink to="/legal" activeClassName="active-link">
+            Legal
+          </NavLink>
+          <NavLink to="/marketing" activeClassName="active-link">
+            Marketing
           </NavLink>
           <NavLink to="/plans&pricing" activeClassName="active-link">
-            Plans & pricing
+            Packages
+          </NavLink>
+          <NavLink to="/terms&Conditions" activeClassName="active-link">
+            Terms & Conditions
           </NavLink>
           <a href="#contactUs">Contact Us</a>
-          <div className="login flex items-center justify-end gap-2 mt-8">
+          <div className="login flex items-center gap-2">
             <div className="avatar flex items-center justify-center rounded-full w-[30px] h-[30px] bg-primary text-white">
               A
             </div>
-            <Link to="/home">Log In</Link>
+            <Link to="/">Log In</Link>
           </div>
         </nav>
       </div>

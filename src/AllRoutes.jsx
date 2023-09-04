@@ -7,6 +7,7 @@ import { ServicesPage } from "./pages/ServicesPage";
 import { PlansAndPricingPage } from "./pages/PlansAndPricingPage";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { MarketingPage } from "./pages/MarketingPage";
 
 const Animated = () => {
   const location = useLocation();
@@ -16,6 +17,7 @@ const Animated = () => {
         <Route path={"/"} element={<HomePage />} />
         <Route path={"/about"} element={<AboutPage />} />
         <Route path={"/legal"} element={<ServicesPage />} />
+        <Route path={"/marketing"} element={<MarketingPage />} />
         <Route path={"/plans&pricing"} element={<PlansAndPricingPage />} />
       </Route>
     </Routes>
@@ -31,6 +33,7 @@ export const AllRoutes = () => {
           <Route path={"/"} element={<HomePage />} />
           <Route path={"/about"} element={<AboutPage />} />
           <Route path={"/legal"} element={<ServicesPage />} />
+          <Route path={"/marketing"} element={<MarketingPage />} />
           <Route path={"/plans&pricing"} element={<PlansAndPricingPage />} />
         </Route>
       </Routes>

@@ -6,7 +6,7 @@ const HomeContext = createContext();
 
 // Create a provider component
 export function HomeContextProvider({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
     <HomeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
