@@ -37,27 +37,41 @@ export const ContactUs = () => {
           <div className="flex flex-col gap-2">
             <h4 className={`${styles.h4Text}`}>Address</h4>
             <p className={`${styles.pText}`}>
-              500 Terry Francine Street San Francisco, CA 94158
+              Mailing address: Suite 9, Office No. 903 Burlington Tower,
+              Business Bay, Dubai, UAE
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <h4 className={`${styles.h4Text}`}>Email</h4>
-            <p className={`${styles.pText}`}>info@mysite.com</p>
+            <p className={`${styles.pText}`}>info@ukabusiness.com</p>
+            <p className={`${styles.pText}`}>mona@ukabusiness.com</p>
           </div>
           <div className="flex flex-col gap-2">
             <h4 className={`${styles.h4Text}`}>Phone</h4>
-            <p className={`${styles.pText}`}>123-456-7890</p>
+            <p className={`${styles.pText}`}>+971 58 118 3944</p>
           </div>
         </div>
         <div className="outter-links flex items-center gap-4">
-          <Link className="hover:text-primary" to={"/youtube"}>
-            YouTube
+          <Link
+            className="hover:text-primary"
+            to={"/instagram/UKABusinessServices"}
+          >
+            Instagram
           </Link>
-          <Link className="hover:text-primary" to={"/facebook"}>
+          <Link
+            className="hover:text-primary"
+            to={"/facebook/UKABusinessServices"}
+          >
             FaceBook
           </Link>
-          <Link className="hover:text-primary" to={"/linkedin"}>
-            Linkedin
+          <Link className="hover:text-primary" to={"/tiktok/UKABusiness"}>
+            TikTok
+          </Link>
+          <Link
+            className="hover:text-primary"
+            to={"/whatsapp/+971 58 118 3944"}
+          >
+            Whatsapp
           </Link>
         </div>
       </div>

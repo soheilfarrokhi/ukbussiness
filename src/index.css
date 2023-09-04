@@ -6,7 +6,12 @@
   --main-font: "Poppins", sans-serif;
   --menu-color: #dad8d8;
   --menu-color-black: #000;
-  --primary-btn-color: #ff7f11;
+  /* --primary-btn-color: #ff7f11; */
+  --primary-btn-color: #83a490;
+  --primary-color: #83a490;
+  --white-color: #f7f7f7;
+  --black-color: #212121;
+  --grey-color: #d6d6d6;
 }
 
 html {
@@ -37,7 +42,7 @@ input:focus {
 
 /* my customs  */
 .main-nav {
-  background-color: var(--menu-color-black);
+  /* background-color: var(--menu-color-black); */
   transition: 0.4s ease;
 }
 

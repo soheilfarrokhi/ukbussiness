@@ -15,7 +15,7 @@ const Animated = () => {
       <Route path={"/"} element={<ThemeOne />}>
         <Route path={"/"} element={<HomePage />} />
         <Route path={"/about"} element={<AboutPage />} />
-        <Route path={"/services"} element={<ServicesPage />} />
+        <Route path={"/legal"} element={<ServicesPage />} />
         <Route path={"/plans&pricing"} element={<PlansAndPricingPage />} />
       </Route>
     </Routes>
@@ -30,7 +30,7 @@ export const AllRoutes = () => {
         <Route path={"/"} element={<ThemeOne />}>
           <Route path={"/"} element={<HomePage />} />
           <Route path={"/about"} element={<AboutPage />} />
-          <Route path={"/services"} element={<ServicesPage />} />
+          <Route path={"/legal"} element={<ServicesPage />} />
           <Route path={"/plans&pricing"} element={<PlansAndPricingPage />} />
         </Route>
       </Routes>

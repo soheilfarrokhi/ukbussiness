@@ -12,9 +12,9 @@ export const AboutHero = () => {
           <div className="w-1/2 mx-auto flex flex-col gap-8">
             <h1 className={`${styles.hText} text-center`}>About</h1>
             <p className={`${styles.pText} text-center`}>
-              I'm a paragraph. Click here to add your own text and edit me. I’m
-              a great place for you to tell a story and let your users know a
-              little more about you.
+              We are a young, innovative team of professionals with various
+              legal and marketing backgrounds. Our team takes responsibility for
+              delivering outstanding results.
             </p>
           </div>
         </div>
@@ -22,44 +22,41 @@ export const AboutHero = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-[1000px] mx-auto">
         <div className="flex flex-col gap-4">
           <div className="h-[2px] bg-white w-full"></div>
-          <h4 className={`${styles.h4Text} text-white`}>Our Expertise</h4>
+          <h4 className={`${styles.h4Text} text-white`}>Our Mission</h4>
           <p className={`${styles.pText}`}>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. I’m a great place for you to
-            tell a story and let your users know a little more about you.
+            We provide bespoke legal and business services to our clients and
+            connect them with the best legal solution and the digital aspects
+            that the world has to offer.
           </p>
         </div>
         <div className="flex flex-col gap-4">
           <div className="h-[2px] bg-white w-full"></div>
-          <h4 className={`${styles.h4Text} text-white`}>Our Philosophy</h4>
+          <h4 className={`${styles.h4Text} text-white`}>Our Vision</h4>
           <p className={`${styles.pText}`}>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. I’m a great place for you to
-            tell a story and let your users know a little more about you.
+            We endeavour to continually add value to our client’s businesses
+            with rapid strategic thinking, a creative approach to
+            problem-solving and rapid response to all our client’s requirements.
           </p>
         </div>
         <div className="flex flex-col gap-4">
           <div className="h-[2px] bg-white w-full"></div>
-          <h4 className={`${styles.h4Text} text-white`}>
-            Our Commitment to Results
-          </h4>
+          <h4 className={`${styles.h4Text} text-white`}>Our Approach</h4>
           <p className={`${styles.pText}`}>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. I’m a great place for you to
-            tell a story and let your users know a little more about you.
+            We strive to bridge the gap between an individual and the emerging
+            legal and digital world. We make use of legal expertise and digital
+            marketing techniques to support this new and emerging era of
+            digitalisation.
           </p>
         </div>
         <div className="flex flex-col gap-4">
           <div className="h-[2px] bg-white w-full"></div>
-          <h4 className={`${styles.h4Text} text-white`}>Our Experience</h4>
+          <h4 className={`${styles.h4Text} text-white`}>Our Commitment</h4>
           <p className={`${styles.pText}`}>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. I’m a great place for you to
-            tell a story and let your users know a little more about you.
+            As the legal and the marketing industries are both constantly
+            evolving, it is crucial that our innovative team of professionals is
+            constantly developing, ensuring the advice that we give to our
+            clients is up to date. This is something that we fully embed into
+            our Company culture.
           </p>
         </div>
       </div>

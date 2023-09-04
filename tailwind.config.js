@@ -1,10 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  // ...
+  darkMode: "class", // Enable dark mode with a class
+  variants: {
+    extend: {
+      backgroundColor: ["dark"],
+      textColor: ["dark"],
+    },
+  },
+  // ...
   theme: {
     extend: {
       colors: {
-        primary: "#ff7f11",
+        primary: "#83a490",
+        blackColor: "#212121",
+        whiteColor: "#f7f7f7",
+        greyColor: "#d6d6d6",
       },
     },
     screens: {
@@ -16,7 +28,12 @@ export default {
       md: "768px",
       // => @media (min-width: 768px) { ... }
 
+      lgmd: "900px",
+      // => @media (min-width: 768px) { ... }
+
       lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+      lgxl: "1200px",
       // => @media (min-width: 1024px) { ... }
 
       xl: "1280px",

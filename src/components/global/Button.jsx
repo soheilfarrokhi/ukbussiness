@@ -1,9 +1,12 @@
 import React from "react";
 import { styles } from "../../styles";
 
-export const Button = ({ title, customClass }) => {
+export const Button = ({ redirect = "", title, customClass }) => {
   return (
-    <button className={`transition ${styles.btnMain} ${customClass}`}>
+    <button
+      onClick={() => redirect()}
+      className={`transition ${styles.btnMain} ${customClass}`}
+    >
       {title}
     </button>
   );

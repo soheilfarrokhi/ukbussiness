@@ -12,43 +12,43 @@ export const WhyChooseUs = () => {
         </h2>
         <div className="w-full flex flex-col  gap-8 mb-8  max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3  gap-2 justify-between  w-full">
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-[1px] bg-black w-[200px]"></div>
-              <h4 className={`${styles.h4Text} text-black`}>
+            <div className="flex flex-col  gap-4">
+              <div className="h-[2px] bg-black w-[200px]"></div>
+              <h5 className={`${styles.h5Text} text-black max-w-[250px]`}>
                 15+ Years of Experience
-              </h4>
+              </h5>
             </div>
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-[1px] bg-black w-[200px]"></div>
-              <h4 className={`${styles.h4Text} text-black`}>
-                Certified Professional Traders
-              </h4>
+            <div className="flex flex-col  gap-4">
+              <div className="h-[2px] bg-black w-[200px]"></div>
+              <h5 className={`${styles.h5Text} text-black max-w-[250px]`}>
+                Certified Professional Consultants and Advisors
+              </h5>
             </div>
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-[1px] bg-black w-[200px]"></div>
-              <h4 className={`${styles.h4Text} text-black`}>
-                Easy & Simple Trading Tools
-              </h4>
+            <div className="flex flex-col  gap-4">
+              <div className="h-[2px] bg-black w-[200px]"></div>
+              <h5 className={`${styles.h5Text} text-black max-w-[250px]`}>
+                Constantly Evolving
+              </h5>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 justify-between  w-full">
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-[1px] bg-black w-[200px]"></div>
-              <h4 className={`${styles.h4Text} text-black`}>
-                Data-driven Trading System
-              </h4>
+            <div className="flex flex-col  gap-4">
+              <div className="h-[2px] bg-black w-[200px]"></div>
+              <h5 className={`${styles.h5Text} text-black max-w-[250px]`}>
+                Experience in the UK and the UAE
+              </h5>
             </div>
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-[1px] bg-black w-[200px]"></div>
-              <h4 className={`${styles.h4Text} text-black`}>
-                Over 2,000 Satisfied Clients
-              </h4>
+            <div className="flex flex-col  gap-4">
+              <div className="h-[2px] bg-black w-[200px]"></div>
+              <h5 className={`${styles.h5Text} text-black max-w-[250px]`}>
+                Over 1,000 Long-Term Satisfied Clients
+              </h5>
             </div>
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-[1px] bg-black w-[200px]"></div>
-              <h4 className={`${styles.h4Text} text-black`}>
-                Constantly Evolving
-              </h4>
+            <div className="flex flex-col  gap-4">
+              <div className="h-[2px] bg-black w-[200px]"></div>
+              <h5 className={`${styles.h5Text} text-black max-w-[250px]`}>
+                Experience Working with Big Known Brands
+              </h5>
             </div>
           </div>
         </div>

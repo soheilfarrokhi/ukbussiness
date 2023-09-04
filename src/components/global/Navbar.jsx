@@ -1,11 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styles } from "../../styles";
-import Logo from "../../assets/images/home/logo.png";
+import LogoWhite from "../../assets/images/home/logo.png";
+import LogoBlack from "../../assets/images/home/logo-black.png";
 import { Link, NavLink } from "react-router-dom";
 import { MobileNavbar } from "./MobileNavbar";
+import { CiDark } from "react-icons/ci";
+import { useHomeContext } from "../../context/HomeContext";
 
 export const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const { isDarkMode, setIsDarkMode } = useHomeContext();
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+
+  const toggleDarkMode = (e) => {
+    e.preventDefault();
+    setIsDarkMode(!isDarkMode);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,16 +40,6 @@ export const Navbar = () => {
     };
   }, []);
 
-  const [selectedFont, setSelectedFont] = useState("");
-
-  const handleFontChange = (e) => {
-    setSelectedFont(e.target.value);
-  };
-
-  useEffect(() => {
-    document.documentElement.style.setProperty("--main-font", selectedFont);
-  }, [selectedFont]);
-
   return (
     <div
       className={`w-full fixed top-0 left-0 z-20 
@@ -40,7 +47,9 @@ export const Navbar = () => {
        `}
     >
       <div
-        className={`main-nav mx-auto flex items-center justify-between gap-2 py-4 ${
+        className={`main-nav ${
+          isDarkMode ? "bg-blackColor" : "bg-whiteColor"
+        } mx-auto flex items-center justify-between gap-2 py-4 ${
           styles.paddingX
         } ${
           isNavbarVisible
@@ -54,23 +63,47 @@ export const Navbar = () => {
         >
           <img
             className="w-full h-full object-contain object-center"
-            src={Logo}
+            src={isDarkMode ? LogoWhite : LogoBlack}
             alt=""
           />
         </Link>
         <MobileNavbar />
-        <nav className=" hidden lg:flex items-center gap-4 text-white">
+
+        <nav
+          className={`hidden lg:flex items-center gap-4 ${
+            isDarkMode ? "text-whiteColor" : "text-blackColor"
+          }`}
+        >
+          {/*darkmode theme  */}
+          <button
+            className={`${styles.themeBtn} ${
+              isDarkMode
+                ? "bg-blackColor text-whiteColor hover:bg-whiteColor hover:text-blackColor"
+                : "bg-whiteColor text-blackColor hover:bg-blackColor hover:text-whiteColor"
+            }`}
+            onClick={toggleDarkMode}
+          >
+            {/* <span>Dark</span> */}
+            <CiDark className={`${styles.iconText}`} />
+          </button>
+          {/*darkmode theme end */}
           <NavLink to="/" activeClassName="active-link" exact>
             Home
           </NavLink>
           <NavLink to="/about" activeClassName="active-link">
             About
           </NavLink>
-          <NavLink to="/services" activeClassName="active-link">
-            Services
+          <NavLink to="/legal" activeClassName="active-link">
+            Legal
           </NavLink>
-          <NavLink to="/plans&pricing" activeClassName="active-link">
-            Plans & pricing
+          <NavLink to="/marketing" activeClassName="active-link">
+            Marketing
+          </NavLink>
+          <NavLink to="/packages" activeClassName="active-link">
+            Packages
+          </NavLink>
+          <NavLink to="/terms&Conditions" activeClassName="active-link">
+            Terms & Conditions
           </NavLink>
           <a href="#contactUs">Contact Us</a>
           <div className="login flex items-center gap-2">

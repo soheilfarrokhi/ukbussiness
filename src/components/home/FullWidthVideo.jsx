@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "../../assets/video/sample.mp4";
+import Video from "../../assets/video/sample-video.mp4";
 
 export const FullWidthVideo = () => {
   return (

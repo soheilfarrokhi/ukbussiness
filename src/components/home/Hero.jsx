@@ -14,7 +14,7 @@ export const Hero = () => {
       >
         <div className="w-1/2 mx-auto">
           <h1 className={`${styles.heroHeadText} text-center`}>
-            Grow your Bussiness Start Marketing
+            UKA BUSINESS <br /> UKA MARKETING
           </h1>
         </div>
         <h2 className={`${styles.heroSubText} text-center`}>
