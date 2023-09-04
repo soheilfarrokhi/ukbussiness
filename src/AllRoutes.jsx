@@ -8,6 +8,7 @@ import { PlansAndPricingPage } from "./pages/PlansAndPricingPage";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { MarketingPage } from "./pages/MarketingPage";
+import { NotFound } from "./pages/NotFound";
 
 const Animated = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const Animated = () => {
         <Route path={"/legal"} element={<ServicesPage />} />
         <Route path={"/marketing"} element={<MarketingPage />} />
         <Route path={"/plans&pricing"} element={<PlansAndPricingPage />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
@@ -36,6 +38,7 @@ export const AllRoutes = () => {
           <Route path={"/marketing"} element={<MarketingPage />} />
           <Route path={"/plans&pricing"} element={<PlansAndPricingPage />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       {/* </AnimatePresence> */}
     </BrowserRouter>
